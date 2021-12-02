@@ -1,12 +1,11 @@
 with open('input.txt') as f:
-    file = []
+    steering_input = []
     for line in f:
-        file.append(line.split())
+        steering_input.append(line.split())
 
 horizontal_position = 0
 depth = 0
 aim = 0
-steering_input = list(file)
 
 for action in steering_input:
     position = action[0]
