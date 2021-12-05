@@ -70,7 +70,7 @@ class bingoPlayer():
            if all(self.bingo_list != 0):
                winning_board_number = np.where(self.bingo_list == self.round)[0][0]
                self.winning_board = card_score[winning_board_number]
-               print(f"Winning board is: {winning_board_number}, with score: {self.winning_board}")
+               print(f"Winning board is: {winning_board_number+1}, with score: {self.winning_board}")
                break
 
            self.round += 1
@@ -82,4 +82,4 @@ input_reader = readInput()
 draw_order, bingo_cards = input_reader.read_input(file="input.txt")
 
 bingo_session = bingoPlayer(draw_order, bingo_cards, verbose=True)
-winning_board = bingo_session.play_bingo() # Winning board is: 1, with score: 1924
+winning_board = bingo_session.play_bingo() # Winning board is: 32, with score: 1830
