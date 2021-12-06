@@ -77,4 +77,4 @@ for coordinate_number, coordinate in enumerate(coordinates_array):
     progress = (coordinate_number+1)/coordinates_array.shape[0]
     print(f"Progress: {round(progress*100,2)}%")
 
-print(len(imputed_grid[imputed_grid >= 2])) # 7085
+print(len(imputed_grid[imputed_grid >= 2])) # 20271
