@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 
 with open("input.txt") as f:
     initial_state = list(map(int, f.read().split(",")))
